@@ -27,7 +27,7 @@ namespace WelcomeToPain
 
         public string CalculateUserPersonality(User user)
         {
-            if(user.Introversion > 5 && user.Structure > 8 && user.Dreamer > 6)
+            if(user.Introversion > 20 && user.Structure > 20 && user.Dreamer > 20)
             {
                 string result = "OUTPUT:\n You are an intense dreamer, you live to shape the world to your imagination but do not work well with others in attaining your vision.";
                 Console.WriteLine(result);
@@ -58,6 +58,15 @@ namespace WelcomeToPain
 
                 user.Personality = result;
 
+                return result;
+            }
+
+            else if(user.Introversion > 10 && user.Impulsive < 12 && user.Dreamer > 9)
+            {
+                string result = "OUTPUT:\n You like to be in your own company and you are very considerate but a person who like to be in dreams";
+                Console.WriteLine(result);
+                Console.ReadLine();
+                user.Personality = result;
                 return result;
             }
 

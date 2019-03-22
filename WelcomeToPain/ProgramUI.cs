@@ -54,7 +54,7 @@ namespace WelcomeToPain
 
             foreach(User user in users)
             {
-                Console.WriteLine($"{user.FullName}\n {user.Personality}");
+                Console.WriteLine($"{user.FullName}\n {user.Personality}\n\n");
             }
 
             Console.ReadLine();
