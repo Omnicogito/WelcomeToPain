@@ -8,6 +8,7 @@ namespace WelcomeToPain
 {
     public class User
     {
+        public string FullName { get; set; }
         public int Introversion { get; set; }
         public int Extraversion { get; set; }
         public int Structure { get; set; }
@@ -16,8 +17,9 @@ namespace WelcomeToPain
         public int Realist { get; set; }
         public string Personality { get; set; }
 
-        public User (int introversion, int extraversion, int structure, int impulsive, int dreamer, int realist, string personality)
+        public User (string fullname, int introversion, int extraversion, int structure, int impulsive, int dreamer, int realist, string personality)
         {
+            FullName = fullname;
             Introversion = introversion;
             Extraversion = extraversion;
             Structure = structure;
