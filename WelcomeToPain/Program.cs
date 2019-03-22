@@ -10,6 +10,8 @@ namespace WelcomeToPain
     {
         static void Main(string[] args)
         {
+            ProgramUI programUI = new ProgramUI();
+            programUI.run();
         }
     }
 }
